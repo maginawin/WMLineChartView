@@ -14,6 +14,9 @@
 		A4B049881B84B71A00AE2FA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B049871B84B71A00AE2FA1 /* Images.xcassets */; };
 		A4B0498B1B84B71A00AE2FA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B049891B84B71A00AE2FA1 /* LaunchScreen.xib */; };
 		A4B049971B84B71A00AE2FA1 /* WMLineChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B049961B84B71A00AE2FA1 /* WMLineChartTests.m */; };
+		A4B049A31B84B75D00AE2FA1 /* WMLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B049A21B84B75D00AE2FA1 /* WMLineChartView.m */; };
+		A4B049A61B84B76700AE2FA1 /* WMLineChartViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B049A51B84B76700AE2FA1 /* WMLineChartViewCell.m */; };
+		A4B049A91B84B8CA00AE2FA1 /* WMLineChartViewCellValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B049A81B84B8CA00AE2FA1 /* WMLineChartViewCellValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		A4B049901B84B71A00AE2FA1 /* WMLineChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMLineChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B049951B84B71A00AE2FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B049961B84B71A00AE2FA1 /* WMLineChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLineChartTests.m; sourceTree = "<group>"; };
+		A4B049A11B84B75D00AE2FA1 /* WMLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLineChartView.h; sourceTree = "<group>"; };
+		A4B049A21B84B75D00AE2FA1 /* WMLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLineChartView.m; sourceTree = "<group>"; };
+		A4B049A41B84B76700AE2FA1 /* WMLineChartViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLineChartViewCell.h; sourceTree = "<group>"; };
+		A4B049A51B84B76700AE2FA1 /* WMLineChartViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLineChartViewCell.m; sourceTree = "<group>"; };
+		A4B049A71B84B8CA00AE2FA1 /* WMLineChartViewCellValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLineChartViewCellValue.h; sourceTree = "<group>"; };
+		A4B049A81B84B8CA00AE2FA1 /* WMLineChartViewCellValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLineChartViewCellValue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		A4B049791B84B71A00AE2FA1 /* WMLineChart */ = {
 			isa = PBXGroup;
 			children = (
+				A4B049A01B84B74800AE2FA1 /* Line Chart View */,
 				A4B0497E1B84B71A00AE2FA1 /* AppDelegate.h */,
 				A4B0497F1B84B71A00AE2FA1 /* AppDelegate.m */,
 				A4B049811B84B71A00AE2FA1 /* ViewController.h */,
@@ -117,6 +127,19 @@
 				A4B049951B84B71A00AE2FA1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4B049A01B84B74800AE2FA1 /* Line Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				A4B049A11B84B75D00AE2FA1 /* WMLineChartView.h */,
+				A4B049A21B84B75D00AE2FA1 /* WMLineChartView.m */,
+				A4B049A41B84B76700AE2FA1 /* WMLineChartViewCell.h */,
+				A4B049A51B84B76700AE2FA1 /* WMLineChartViewCell.m */,
+				A4B049A71B84B8CA00AE2FA1 /* WMLineChartViewCellValue.h */,
+				A4B049A81B84B8CA00AE2FA1 /* WMLineChartViewCellValue.m */,
+			);
+			name = "Line Chart View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B049831B84B71A00AE2FA1 /* ViewController.m in Sources */,
+				A4B049A31B84B75D00AE2FA1 /* WMLineChartView.m in Sources */,
 				A4B049801B84B71A00AE2FA1 /* AppDelegate.m in Sources */,
+				A4B049A91B84B8CA00AE2FA1 /* WMLineChartViewCellValue.m in Sources */,
 				A4B0497D1B84B71A00AE2FA1 /* main.m in Sources */,
+				A4B049A61B84B76700AE2FA1 /* WMLineChartViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WMLineChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WMLineChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
